@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Homepage</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding-top: 70px;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 3em;
+        }
+        .mountain {
+            background-image: url('https://example.com/mountain-hotel.jpg'); /* Replace with your mountain hotel image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        .seaside {
+            background-image: url('https://example.com/seaside-hotel.jpg'); /* Replace with your seaside hotel image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        .button {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #e5533d;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="#mountain">Mountain Hotel</a>
+    <a href="#seaside">Seaside Hotel</a>
+</header>
+<div class="container">
+    <div id="mountain" class="section mountain">
+        <div>
+            <h2>Mountain Hotel</h2>
+            <a href="/booking?type=mountain" class="button">Book Now</a>
+        </div>
+    </div>
+    <div id="seaside" class="section seaside">
+        <div>
+            <h2>Seaside Hotel</h2>
+            <a href="/booking?type=seaside" class="button">Book Now</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
